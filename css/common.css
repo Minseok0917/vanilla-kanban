@@ -1,5 +1,5 @@
 /* setting */
-*{ margin: 0; padding: 0; box-sizing: border-box; }
+*{ margin: 0; padding: 0; box-sizing: border-box; user-select: none;}
 li{ list-style: none;}
 button{ background: transparent; border: 0; outline: 0; cursor: pointer;}
 html,body{ width: 100%; height: 100%; background: #efefef;}
@@ -22,7 +22,7 @@ html,body{ width: 100%; height: 100%; background: #efefef;}
  
 /* section.kanban-board */
 .kanban-board{ padding: 40px; flex-wrap: nowrap; gap: 20px; align-items: start;  } 
-.kanban-board .btn.create-column{ height: min-content; }
+.kanban-board .btn.create-column{ height: min-content; white-space: nowrap; }
 .kanban-board .column { padding: 20px;  width: 300px; background: #fff; height: min-content;  border-radius: 5px;;}
 .kanban-board .column .column-name{ font-weight: bold; white-space: nowrap; text-overflow: ellipsis; }
 .kanban-board .column .card-container{  padding: 20px 0; display: grid; gap: 10px;}
